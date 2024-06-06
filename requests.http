@@ -1,0 +1,36 @@
+###
+POST http://localhost:3000/api/items HTTP/1.1
+Content-Type: application/json
+
+
+ {
+    "name": "VESTIDO GEORGETTE MULTIPOSICIÓN ",
+    "description": "Vestido largo de escote pico y tirantes finos. Detalle de frunces en pecho y foulard multiposición.",
+    "price": 2.399,
+    "category": "Dama",
+    "imageUrl": "https://example.com/camisa.jpg"
+
+ }
+###
+GET http://localhost:3000/api/items HTTP/1.1
+
+###
+GET http://localhost:3000/api/items/665e1378111e89c9344ba635 HTTP/1.1
+
+
+###
+PUT http://localhost:3000/api/items/665e1a62c57d70b7dd4f1d5f HTTP/1.1
+Content-Type: application/json
+
+ {
+    "name": "CHAQUETA PUNTO FINO CANALÉ",  
+   "description": "Chaqueta de escote pico y manga larga. Cierre frontal con botones.",
+    "price": 1.499,
+    "category": "Dama",
+    "imageUrl": "https://example.com/camisa.jpg"
+
+ }
+
+#####
+
+DELETE http://localhost:3000/api/items/665e130c111e89c9344ba633 HTTP/1.1
